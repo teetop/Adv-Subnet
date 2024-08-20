@@ -1,18 +1,18 @@
 # Game
 
-Game is a simple guessing game platform that rewards players for participating in the game. Players stake to guess a particular mystery letter and is rewarded 10% of their stake if guessed right but lost their stake is guessed wrongly.
+Game is a simple guessing game platform that rewards players for participating. Players stake to guess a particular mystery letter and are rewarded 10% of their stake if guess right but lose their stake if they guess wrongly.
 
 ## Description
 
-This is a smart contract is written in Solidity programming language. The main goal of this contract is to show the power of Avalanche custom subnet.
+This is a smart contract written in Solidity programming language. The main goal of this contract is to show the power of Avalanche's custom subnet.
 
 The contract has just 3 functions.
 
-- setMystery: This function allows the contract owner to pre-add players to the game. These players get tokens minted to them, these tokens are used to participate in the game. Any players without this token cannot participate in the game.
+- ```setMystery```: This function allows the contract owner to pre-add players to the game. These players get tokens minted to them, these tokens are used to participate in the game. Any players without this token cannot participate in the game.
 
-- playGame: This players participate in the game using this funtion. They input their stake amount and their guess. If they guessed right, 10% of their stake is added to their balance, if otherwise they lose their entire stake.
+- ```playGame```: These players participate using this function. They input their stake amount and their guess. If they guessed right, 10% of their stake is added to their balance, otherwise they lose their entire stake.
 
-- disburseWIns: The contract owner disburse to the winners their winning token. Only player who have won get token.
+- ```disburseWIns```: The contract owner disburses to the winners their winning token. Only players who have won get a token.
 
 
 # Getting Started
@@ -23,7 +23,7 @@ The contract has just 3 functions.
 
 - When the CLI is installed, type ```avalanche subnet create mySubnet``` and follow the instruction on your terminal to create your subnet. NOTE: Instead of the mySubnet, you can choose your subnet name.
 
-- Deploy your subnet by typing ```avalanche subnet deploy mySubnet``` and follow the instruction.
+- Deploy your subnet by typing ```avalanche subnet deploy mySubnet``` and follow the instructions.
 
 - When your subnet is deployed, use the information thereof to set up your metamask network.
 
